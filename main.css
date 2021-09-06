@@ -1,0 +1,86 @@
+
+main {
+    --heading-font-size: 20px;
+    --heading-text-align: left;
+    --heading-font-weight: 500;
+}
+
+/* Main content */
+.main-content {
+    margin-top: 20px;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+}
+
+/* div body-main */
+
+/* main */
+main{
+    width: 60%;
+    height: auto;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 5%;
+    display: inline-block;
+}
+
+.caurosel, .latest-release, .popular-artists, .music-genres, .mood-playlist, .latest-english, .latest-hindi {
+    width: 100%;
+    height: auto;
+    border: 2px solid white;
+    margin: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* Common heading class for all sections */
+.title-style p{    
+    font-size: var(--heading-font-size);
+    text-align: var(--heading-text-align);
+    font-weight: var(--heading-font-weight);
+    color: var(--primary-text-color);
+    margin: 0px;
+    padding: 5px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 7px;
+}
+
+
+/* aside section */
+
+aside {
+    width: 25%;
+    height: 700px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 50px;
+    position: fixed;
+    top: 102px;
+    overflow-y: auto;
+}
+
+
+/* Responsive design */
+
+@media screen and (max-width: 768px) {
+    /* no changes required  */
+} 
+
+@media screen and (max-width: 425px) {
+    
+    main{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    aside {
+        display: none;
+    }
+} 

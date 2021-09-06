@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<head>
+    <title> Music Player </title>
+    <meta name="viewport" content="width=device-width", initial-scale="1", minimum-scale="1">
+    <link rel="stylesheet" type="text/css" href="header.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="caurosel.css">
+    <link rel="stylesheet" type="text/css" href="latest-release.css">
+    <link rel="stylesheet" type="text/css" href="popular-artists.css">
+    <link rel="stylesheet" type="text/css" href="music-genres.css">
+    <link rel="stylesheet" type="text/css" href="mood-playlist.css">
+    <link rel="stylesheet" type="text/css" href="latest-songs.css">
+    <link rel="stylesheet" type="text/css" href="footer.css">
+    <link rel="stylesheet" type="text/css" href="aside.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    
+</head>
+<body>
+    <header>
+        <!-- site logo and name -->
+        <div class="site-logo-container">
+            <!-- site image conatiner -->
+            <div class="site-logo-box">
+                <img src="images/mp-logo.png">
+            </div>
+            <!-- site name -->
+            <div class="site-name">
+                <p> Coding <br> <strong> Ninjas </strong> </p>
+            </div>
+        </div>
+
+        <!-- page name -->
+        <div class="site-page-name">
+            <p> Favourites </p>
+        </div>
+
+        <!-- search bar -->
+        <div class="search-bar-container">
+            <div class="search-bar-box">
+                <!-- search icon -->
+                <i class="fas fa-search"></i>
+                <!-- serach input -->
+                <input id="search-bar" type="text" name="song-name" placeholder="Search">
+                <!-- microphone icon -->
+                <i class="fas fa-microphone"></i>
+            </div>
+        </div>
+
+        <!-- notification and user profile picture -->
+        <div class="user-profile-container">
+            <!-- bell icon container -->
+            <div class="bell-icon">
+                <!-- bell icon -->
+                <i class="fas fa-bell"></i>
+            </div>
+
+            <!-- user profile picture container -->
+            <div>
+                <div class="user-profile-picture">
+                    <!-- user image -->
+                    <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg" alt="profile image">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- main-content div containing both main and aside section -->
+    <div class="main-content">
+
+        <main>
+            <!-- site caurosel main container-->
+            <div class="caurosel">
+                <!-- caurosel sub-container to make the section overflow over responsive design-->
+                <div class="caurosel-container">
+                    <!-- Individual image container -->
+                    <div class="caurosel-image-container">
+                        <img src="images/img2.jpg">
+                    </div>
+                    
+                    <!-- Individual image container -->
+                    <div class="caurosel-image-container">
+                        <img src="images/img1.jpg">
+                    </div>
+
+                    <!-- Individual image container -->
+                    <div class="caurosel-image-container">
+                        <img src="images/img3.jpg">
+                    </div>
+                </div>
+            </div>
+    
+            <!-- latest release container -->
+            <div class="latest-release title-style">
+                <!-- Section heading -->
+                <p> Latest Release </p>
+
+                <!-- individula latest song container -->
+                <div class="latest-song">
+                    <!-- latest song image container-->
+                    <div class="latest-song-photo">
+                        <img src="images/img4.png" alt="profile image">
+                        <!-- play button container -->
+                        <div class="latest-song-play-button">
+                            <!-- play button icon -->
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+
+                    <!-- song details container -->
+                    <div class="latest-song-details">
+                        <p> <strong> Onism </strong> <br> AUG 11, 2017 </p>
+                    </div>
+
+                    <!-- three-dots container with dropdown menu -->
+                    <div class="latest-song-ellipsis-container dropdown-menu-left">
+                        <!-- ellipsis container -->
+                        <div class="latest-song-ellipsis">
+                            <!-- ellipsis icon -->
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+                        <!-- dropdown list container-->
+                        <div class="dropdown-list">
+                            <!-- dropdown list -->
+                            <ul class="no-list-style">
+                                <li> 
+                                    <span>
+                                        <!-- play icon -->
+                                        <i class="fas fa-play"></i>
+                                    </span>
+                                    <!-- Icon name -->
+                                    <span> Play Now </span>
+                                </li>
+
+                                <li> 
+                                    <span> 
+                                        <i class="fas fa-plus"></i>
+                                    </span>
+                                    <spna> Add To Queue </spna>  
+                                </li>
+
+                                <li> 
+                                    <span>
+                                        <i class="fas fa-stream"></i>
+                                    </span>
+                                    <span> Add To Favourites </span>
+                                </li>
+
+                                <li> 
+                                    <span> 
+                                        <i class="fas fa-info-circle"></i>
+                                    </span>
+                                    <span> Get Info </span> 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- individula latest song container -->
+                <div class="latest-song">
+                    <div class="latest-song-photo">
+                        <img src="images/img4.png" alt="profile image">
+                        <div class="latest-song-play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="latest-song-details">
+                        <p> <strong> Onism </strong> <br> AUG 11, 2017 </p>
+                    </div>
+                    <div class="latest-song-ellipsis-container dropdown-menu-right">
+                        <div id="second" class="latest-song-ellipsis">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+                        <div id="second-drop" class="dropdown-list right">
+                            <ul class="no-list-style">
+                                <li> 
+                                    <span>
+                                        <i class="fas fa-play"></i>
+                                    </span>
+                                    <span> Play Now </span>
+                                </li>
+
+                                <li> 
+                                    <span> 
+                                        <i class="fas fa-plus"></i>
+                                    </span>
+                                    <spna> Add To Queue </spna>  
+                                </li>
+
+                                <li> 
+                                    <span>
+                                        <i class="fas fa-stream"></i>
+                                    </span>
+                                    <span> Add To Favourites </span>
+                                </li>
+
+                                <li> 
+                                    <span> 
+                                        <i class="fas fa-info-circle"></i>
+                                    </span>
+                                    <span> Get Info </span> 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- individula latest song container -->
+                <div class="latest-song">
+                    <div class="latest-song-photo">
+                        <img src="images/img4.png" alt="profile image">
+                        <div class="latest-song-play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="latest-song-details">
+                        <p> <strong> Onism </strong> <br> AUG 11, 2017 </p>
+                    </div>
+                    <div class="latest-song-ellipsis-container dropdown-menu-left">
+                        <div class="latest-song-ellipsis">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+                        <div class="dropdown-list left">
+                            <ul class="no-list-style">
+                                <li> 
+                                    <span>
+                                        <i class="fas fa-play"></i>
+                                    </span>
+                                    <span> Play Now </span>
+                                </li>
+
+                                <li> 
+                                    <span> 
+                                        <i class="fas fa-plus"></i>
+                                    </span>
+                                    <spna> Add To Queue </spna>  
+                                </li>
+
+                                <li> 
+                                    <span>
+                                        <i class="fas fa-stream"></i>
+                                    </span>
+                                    <span> Add To Favourites </span>
+                                </li>
+
+                                <li> 
+                                    <span> 
+                                        <i class="fas fa-info-circle"></i>
+                                    </span>
+                                    <span> Get Info </span> 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- individula latest song container -->
+                <div class="latest-song">
+                    <div class="latest-song-photo">
+                        <img src="images/img4.png" alt="profile image">
+                        <div class="latest-song-play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="latest-song-details">
+                        <p> <strong> Onism </strong> <br> AUG 11, 2017 </p>
+                    </div>
+                    <div class="latest-song-ellipsis-container dropdown-menu-right">
+                        <div class="latest-song-ellipsis">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+                        <div class="dropdown-list right">
+                            <ul class="no-list-style">
+                                <li> 
+                                    <span>
+                                        <i class="fas fa-play"></i>
+                                    </span>
+                                    <span> Play Now </span>
+                                </li>
+
+                                <li> 
+                                    <span> 
+                                        <i class="fas fa-plus"></i>
+                                    </span>
+                                    <spna> Add To Queue </spna>  
+                                </li>
+
+                                <li> 
+                                    <span>
+                                        <i class="fas fa-stream"></i>
+                                    </span>
+                                    <span> Add To Favourites </span>
+                                </li>
+
+                                <li> 
+                                    <span> 
+                                        <i class="fas fa-info-circle"></i>
+                                    </span>
+                                    <span> Get Info </span> 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+    
+             <!-- popular artist container  -->
+            <div class="popular-artists title-style">
+                <p> Popular Artists </p>
+
+                <!-- Popular artist main container -->
+                <div class="popular-artist-container">
+                    <!-- single artist container -->
+                    <div class="artist-image-container ">
+                        <!-- Artist image -->
+                        <img src="images/img5.png"> 
+                        <br>
+                        <!-- Artist name -->
+                        <span> Ed Sheeran </span>
+                        <!-- Play button on hover -->
+                        <div class="latest-song-play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+
+                    <!-- single artist container -->
+                    <div class="artist-image-container">
+                        <img src="images/img6.png"> 
+                        <br>
+                        <span> Drake </span>
+                        <div class="latest-song-play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+
+                    <!-- single artist container -->
+                    <div class="artist-image-container">
+                        <img src="images/img7.png"> 
+                        <br>
+                        <span> The Weeknd </span>
+                        <div class="latest-song-play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+
+                    <!-- single artist container -->
+                    <div class="artist-image-container">
+                        <img src="images/img8.png"> 
+                        <br>
+                        <span> Coldplay </span>
+                        <div class="latest-song-play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+
+                    <!-- single artist container -->
+                    <div class="artist-image-container">
+                        <img src="images/img9.png"> 
+                        <br>
+                        <span> Zyan Malik </span>
+                        <div class="latest-song-play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+
+                    <!-- single artist container -->
+                    <div class="artist-image-container">
+                        <img src="images/img5.png"> 
+                        <br>
+                        <span> Ed Sheeran </span>
+                        <div class="latest-song-play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+
+                    <!-- single artist container -->
+                    <div class="artist-image-container">
+                        <img src="images/img6.png"> 
+                        <br>
+                        <span> Drake </span>
+                        <div class="latest-song-play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+
+                    <!-- single artist container -->
+                    <div class="artist-image-container">
+                        <img src="images/img7.png"> 
+                        <br>
+                        <span> The Weeknd </span>
+                        <div class="latest-song-play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+            
+            <!-- music genre container -->
+            <div class="music-genres">
+                <!-- music genre container for the station image -->
+                <div id="station-div" class="genre-container">
+                    <!-- genre image -->
+                    <img id="stations" src="images/img16.png">
+                </div>
+
+                <!-- Larger container for all the genres -->
+                <div class="genre-sub-container">
+                    <!-- individual genre container -->
+                    <div class="genre-container">
+                        <!-- genre image -->
+                        <img src="images/img10.png">
+                        <!-- genre name -->
+                        <div class="genre-name"> Love </div>
+                    </div>
+
+                    <!-- individual genre container -->
+                    <div class="genre-container">
+                        <img src="images/img11.jpg">
+                        <div class="genre-name"> Retro </div>
+                    </div>
+
+                    <!-- individual genre container -->
+                    <div class="genre-container">
+                        <img src="images/img12.jpg">
+                        <div class="genre-name"> Chill </div>
+                    </div>
+
+                    <!-- individual genre container -->
+                    <div class="genre-container">
+                        <img src="images/img13.png">
+                        <div class="genre-name workout"> Workout </div>
+                    </div>
+
+                    <!-- individual genre container -->
+                    <div class="genre-container">
+                        <img src="images/img14.png">
+                        <div class="genre-name"> Rock </div>
+                    </div>
+
+                    <!-- individual genre container -->
+                    <div class="genre-container">
+                        <img src="images/img15.png">
+                        <div class="genre-name"> Pop </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- mood playlist container -->
+            <div class="mood-playlist">
+                <!-- mood playlist sub container to make div overflow for responsive design -->
+                <div class="mood-playlist-sub-container">
+                    <!-- Main div for the image and playlist name -->
+                    <div class="mood-playlist-container">
+                        <!-- playlist image -->
+                        <img src="images/img17.png">
+                        <!-- playlist name -->
+                        <div class="playlist-name party"> Party </div>
+                    </div>
+
+                    <div class="mood-playlist-container">
+                        <img src="images/img18.png">
+                        <div class="playlist-name"> Electronic </div>
+                    </div>
+
+                    <div class="mood-playlist-container">
+                        <img src="images/img19.png">
+                        <div class="playlist-name"> Road Trip </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- latest song container - English -->
+            <div class="latest-english title-style">
+                <!-- Section Heading -->
+                <p> Latest English </p>
+
+                <!-- latest song sub container to make div overflow for responsive design -->
+                <div class="latest-song-container">
+                    <!-- individual song container -->
+                    <div class="song-image-label-box">
+                        <!-- song image -->
+                        <img src="images/latest-songs/img1.png">
+                        <br>
+                        <!-- song name -->
+                        <span id="song-name"> Onism </span>
+                        <br>
+                        <!-- song release date -->
+                        <span id="release-date"> AUG 11, 2017</span>
+                    </div>
+
+                    <!-- individual song container -->
+                    <div class="song-image-label-box">
+                        <img src="images/latest-songs/img2.png">
+                        <br>
+                        <span id="song-name"> Onism </span>
+                        <br>
+                        <span id="release-date"> AUG 11, 2017</span>
+                    </div>
+
+                    <!-- individual song container -->
+                    <div class="song-image-label-box">
+                        <img src="images/latest-songs/img3.png">
+                        <br>
+                        <span id="song-name"> Onism </span>
+                        <br>
+                        <span id="release-date"> AUG 11, 2017</span>
+                    </div>
+
+                    <!-- individual song container -->
+                    <div class="song-image-label-box">
+                        <img src="images/latest-songs/img4.png">
+                        <br>
+                        <span id="song-name"> Onism </span>
+                        <br>
+                        <span id="release-date"> AUG 11, 2017</span>
+                    </div>
+
+                    <!-- individual song container -->
+                    <div class="song-image-label-box">
+                        <img src="images/latest-songs/img1.png">
+                        <br>
+                        <span id="song-name"> Onism </span>
+                        <br>
+                        <span id="release-date"> AUG 11, 2017</span>
+                    </div>
+
+                    <!-- individual song container -->
+                    <div class="song-image-label-box">
+                        <img src="images/latest-songs/img2.png">
+                        <br>
+                        <span id="song-name"> Onism </span>
+                        <br>
+                        <span id="release-date"> AUG 11, 2017</span>
+                    </div>
+                </div>
+                
+            </div>
+    
+            <!-- latest song container - Hindi -->
+            <div class="latest-hindi title-style">
+                <!-- Section Heading -->
+                <p> Latest Hindi </p>
+
+                 <!-- latest song sub container to make div overflow for responsive design -->
+                <div class="latest-song-container">
+
+                    <!-- individual song container -->
+                    <div class="song-image-label-box">
+                        <!-- song image -->
+                        <img src="images/latest-songs/img1.png">
+                        <br>
+                        <!-- song name -->
+                        <span id="song-name"> Onism </span>
+                        <br>
+                        <!-- song duration -->
+                        <span id="release-date"> AUG 11, 2017</span>
+                    </div>
+
+                    <!-- individual song container -->
+                    <div class="song-image-label-box">
+                        <img src="images/latest-songs/img2.png">
+                        <br>
+                        <span id="song-name"> Onism </span>
+                        <br>
+                        <span id="release-date"> AUG 11, 2017</span>
+                    </div>
+
+                    <!-- individual song container -->
+                    <div class="song-image-label-box">
+                        <img src="images/latest-songs/img3.png">
+                        <br>
+                        <span id="song-name"> Onism </span>
+                        <br>
+                        <span id="release-date"> AUG 11, 2017</span>
+                    </div>
+
+                    <!-- individual song container -->
+                    <div class="song-image-label-box">
+                        <img src="images/latest-songs/img4.png">
+                        <br>
+                        <span id="song-name"> Onism </span>
+                        <br>
+                        <span id="release-date"> AUG 11, 2017</span>
+                    </div>
+
+                    <!-- individual song container -->
+                    <div class="song-image-label-box">
+                        <img src="images/latest-songs/img1.png">
+                        <br>
+                        <span id="song-name"> Onism </span>
+                        <br>
+                        <span id="release-date"> AUG 11, 2017</span>
+                    </div>
+
+                    <!-- individual song container -->
+                    <div class="song-image-label-box">
+                        <img src="images/latest-songs/img2.png">
+                        <br>
+                        <span id="song-name"> Onism </span>
+                        <br>
+                        <span id="release-date"> AUG 11, 2017</span>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <aside>
+            <!-- Section heading container -->
+            <div class="queue-name-container">
+                <span id="aside-name"> Queue </span>
+            </div>
+
+            <!-- Individual song container -->
+            <div class="song-container">
+                <!-- song number -->
+                <div class="song-number mb7px">
+                    01
+                </div>
+
+                <!-- song image -->
+                <div class="song-image mb7px">
+                    <img src="images/latest-songs/img2.png"> 
+                </div>
+
+                <!-- song name -->
+                <div class="song-name mb7px">
+                    <strong> Mirage </strong>
+                    <br>
+                    <span> Else </span>
+                </div>
+
+                <!-- favourite icon  -->
+                <div class="favourite">
+                    <i class="far fa-heart"></i>
+                </div> 
+            </div>
+
+            <!-- Individual song container -->
+            <div class="song-container">
+                <div class="song-number mb7px">
+                    02
+                </div>
+                <div class="song-image mb7px">
+                    <img src="images/latest-songs/img3.png"> 
+                </div>
+                <div class="song-name mb7px">
+                    <strong> Worry Bout Us </strong>
+                    <br>
+                    <span> Rosie Lowe </span>
+                </div>
+                <div class="favourite">
+                    <i class="far fa-heart"></i>
+                </div>
+            </div>
+
+            <!-- Individual song container -->
+            <div class="song-container">
+                <div class="song-number mb7px">
+                    03
+                </div>
+                <div class="song-image mb7px">
+                    <img src="images/latest-songs/img1.png"> 
+                </div>
+                <div class="song-name mb7px">
+                    <strong> New Skin </strong>
+                    <br>
+                    <span> Flume </span>
+                </div>
+                <div class="favourite">
+                    <i class="far fa-heart"></i>
+                </div>
+            </div>
+
+            <!-- Individual song container -->
+            <div class="song-container">
+                <div class="song-number mb7px">
+                    04
+                </div>
+                <div class="song-image mb7px">
+                    <img src="images/latest-songs/img4.png"> 
+                </div>
+                <div class="song-name mb7px">
+                    <strong> Mirage </strong>
+                    <br>
+                    <span> Else </span>
+                </div>
+                <div class="favourite">
+                    <i class="far fa-heart"></i>
+                </div>
+            </div>
+
+            <!-- Individual song container -->
+            <div class="song-container">
+                <div class="song-number mb7px">
+                    05
+                </div>
+                <div class="song-image mb7px">
+                    <img src="images/latest-songs/img1.png"> 
+                </div>
+                <div class="song-name mb7px">
+                    <strong> New Skin </strong>
+                    <br>
+                    <span> Flume </span>
+                </div>
+                <div class="favourite">
+                    <i class="far fa-heart"></i>
+                </div>
+            </div>
+
+            <!-- Individual song container -->
+            <div class="song-container">
+                <div class="song-number mb7px">
+                    06
+                </div>
+                <div class="song-image mb7px">
+                    <img src="images/latest-songs/img2.png"> 
+                </div>
+                <div class="song-name mb7px">
+                    <strong> Mirage </strong>
+                    <br>
+                    <span> Else </span>
+                </div>
+                <div class="favourite">
+                    <i class="far fa-heart"></i>
+                </div> 
+            </div>
+
+            <!-- Individual song container -->
+            <div class="song-container">
+                <div class="song-number mb7px">
+                    07
+                </div>
+                <div class="song-image mb7px">
+                    <img src="images/latest-songs/img3.png"> 
+                </div>
+                <div class="song-name mb7px">
+                    <strong> Worry Bout Us </strong>
+                    <br>
+                    <span> Rosie Lowe </span>
+                </div>
+                <div class="favourite">
+                    <i class="far fa-heart"></i>
+                </div>
+            </div>
+
+            <!-- Individual song container -->
+            <div class="song-container">
+                <div class="song-number mb7px">
+                    08
+                </div>
+                <div class="song-image mb7px">
+                    <img src="images/latest-songs/img4.png"> 
+                </div>
+                <div class="song-name mb7px">
+                    <strong> Mirage </strong>
+                    <br>
+                    <span> Else </span>
+                </div>
+                <div class="favourite">
+                    <i class="far fa-heart"></i>
+                </div>
+            </div>
+
+            <!-- Individual song container -->
+            <div class="song-container">
+                <div class="song-number mb7px">
+                    09
+                </div>
+                <div class="song-image mb7px">
+                    <img src="images/latest-songs/img1.png"> 
+                </div>
+                <div class="song-name mb7px">
+                    <strong> New Skin </strong>
+                    <br>
+                    <span> Flume </span>
+                </div>
+                <div class="favourite">
+                    <i class="far fa-heart"></i>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <!-- music bar main container -->
+       <div class="music-bar">
+           <!-- song name container -->
+            <div class="song-name-container">
+                <!-- song image container -->
+                <div class="footer-song-image">
+                    <img src="images/img4.png">
+                </div>
+                <!-- song name -->
+                <div class="footer-song-name">
+                    <p>
+                       <strong id="footer-song-name"> Onism </strong> 
+                       <br>
+                       <!-- artist name -->
+                       <span id="artist-name"> John Lennon </span>
+                    </p>
+                </div>
+                <!-- favourite container -->
+                <div class="footer-favourite">
+                    <p>
+                         <i class="far fa-heart"></i> 
+                         <i class="fas fa-ban"></i> 
+                    </p>
+                </div>
+            </div>
+
+            <!-- song duration main container -->
+            <div class="song-duration-container">
+                <!-- sub container containing all icons -->
+                <div class="pause-play pt7px">
+                    <i class="fas fa-random pt7px"></i>
+                    <i class="fas fa-step-backward pt7px"></i>
+                    <i class="far fa-play-circle play-button"></i>
+                    <i class="fas fa-step-forward pt7px"></i>
+                    <i class="fas fa-random pt7px"></i>
+                </div>
+                <!-- sub container holding time stamps -->
+                <div class="song-duration">
+                    <span> 1:39 </span>
+                    <span class="song-line"> </span>
+                    <span> 4:44</span>
+                </div>
+            </div>
+
+            <!-- song controls container -->
+            <div class="controls-container">
+                <div class="controls-box">
+                    <span> <i class="fas fa-list"></i> </span>
+                    <span> <i class="fas fa-volume-up"></i> </span>
+                    <span class="volume-line"> </span>
+                    <span> <i class="fas fa-expand-arrows-alt"></i> </span>
+                </div>
+            </div>
+       </div>   
+    </footer>
+
+</body>
+</html>

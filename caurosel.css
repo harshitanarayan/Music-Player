@@ -1,0 +1,69 @@
+.caurosel {
+    border: none;
+}
+
+.caurosel-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: visible;
+}
+
+.caurosel-image-container {
+    width: 30%;
+    margin: 10px 10px;
+    height: 200px;
+    background-size: contain;
+    transition: 0.4s;
+}
+
+.caurosel-image-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.caurosel-image-container:hover {
+    transform: scale(1.2);
+}
+
+/* Responsive design */
+
+@media screen and (max-width: 768px) {
+
+    .caurosel-container {
+        overflow-x: auto; /* Overflows along x-axis to make a horitontal scrolling bar*/
+        /* overflow: visible; */
+    }
+
+    .caurosel-image-container {
+        min-width: 350px;
+        margin: 10px 10px;
+        height: 200px;
+        background-size: contain;
+    }
+
+    .caurosel-image-container:hover {
+        transform: none;
+    }
+
+} 
+
+@media screen and (max-width: 425px) {
+
+    .caurosel-container {
+        overflow-x: auto; /* Overflows along x-axis to make a horitontal scrolling bar*/
+    }
+    
+    .caurosel-image-container {
+        min-width: 350px;
+        margin: 10px 10px;
+        height: 200px;
+        background-size: contain;
+    }
+
+    .caurosel-image-container:hover {
+        transform: none;
+    }
+
+} 
+

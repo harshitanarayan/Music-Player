@@ -1,0 +1,162 @@
+html {
+    --primary-text-color: white;
+    --primary-font-size: 20px;
+    --main-font-family: sans-serif;
+    --search-bar-color: rgb(14,18,48);
+    --background-theme-color: rgb(12,13,29);
+    --secondary-theme-color: rgb(13,16,50);
+    --primary-text-align: center;
+}
+
+html {
+    background-color: var(--background-theme-color);
+}
+
+/* body-header */
+header {
+    width: 100%;
+    height: 70px;
+    padding: 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: transparent; */
+    z-index: 3;
+}
+
+/* common css rules for header components */
+.site-logo-container, .site-page-name, .search-bar-container, .user-profile-container {
+    width: 200px;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 2px solid black; */
+    color: var(--primary-text-color);
+    font-family: var(--main-font-family);
+    font-size: var(--primary-font-size);
+}
+
+/* site's logo and name container */
+
+/* .site-logo-container {
+    justify-content: center;
+} */
+
+.site-logo-box {
+    width: 50%;
+    height: 100%;
+    background-size: contain;
+}
+
+.site-logo-box img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+/* page name */
+
+/* search bar */
+
+.search-bar-container{
+    flex-grow: 3;
+}
+
+.search-bar-box {
+    width: 50%;
+    height: calc(var(--primary-font-size)*2.5);
+    padding: 0px 2px;
+    border: 2px solid var(--search-bar-color);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--search-bar-color);
+}
+
+#search-bar {
+    display: inline-block;
+    border: none;
+    color: var(--primary-text-color);
+    background-color: var(--search-bar-color);
+    width: 90%;
+    margin: 5px;
+}
+
+.search-bar-box i {
+    color: white;
+}
+
+/* notification and user profile picture */
+
+.bell-icon {
+    cursor: pointer;
+    position: relative;
+    margin: 20px;
+}
+
+.bell-icon::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5px;
+    height: 5px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.user-profile-picture {
+    width: 40%;
+    height: 100%;
+    background-size: contain;
+}
+
+.user-profile-picture img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/* Common margins */
+
+.mb5px {
+    margin: 5px;
+}
+
+.mbtop10px {
+    margin-top: 10px;
+}
+
+/* common classes*/
+.no-list-style {
+    list-style: none;
+}
+
+/* Responsive design */
+
+@media screen and (max-width: 768px) {
+    /* no changes required  */
+} 
+
+@media screen and (max-width: 425px) {
+    .site-logo-container {
+        width: 130px;
+    }
+
+    .site-name {
+        display: none;
+    }
+
+    .site-page-name {
+        display: none;
+    }
+
+    .search-bar-box .fa-microphone {
+        display: none;
+    }
+} 

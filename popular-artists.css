@@ -1,0 +1,73 @@
+.popular-artists {
+    border: none;
+}
+
+.popular-artist-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow-x: auto; /* Overflows along x-axis to make a horitontal scrolling bar*/
+}
+
+.artist-image-container {
+    min-width: 130px; /* ????DOUBT Horizontal scroll won't work without min-width. Dont know why*/
+    height: 100%;
+    background-size: contain;
+    margin: 10px;
+    text-align: center;
+    color: var(--primary-text-color);
+    position: relative;
+}
+
+.artist-image-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.artist-image-container:hover img {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.latest-song-play-button {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 20px;
+    height: 20px;
+    transition: all 0.2s ease;
+    color: transparent;
+    font-size: 1.2rem;
+}
+
+.artist-image-container .latest-song-play-button {
+    left: 47%;
+    font-size: 1.5rem;
+}
+
+.artist-image-container:hover .latest-song-play-button {
+    color: white;
+    cursor: pointer;
+}
+
+
+/* Responsive design */
+
+@media screen and (max-width: 768px) {
+    /* no changes required  */
+} 
+
+@media screen and (max-width: 425px) {
+    
+    main{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    aside {
+        display: none;
+    }
+} 
+

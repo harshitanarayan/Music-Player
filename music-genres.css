@@ -1,0 +1,78 @@
+
+.music-genres {
+    background-color: var(--secondary-theme-color);
+    border: none;
+}
+
+.genre-container {
+    width: 80px;
+    height: 80px;
+    margin: 20px 5px 20px 5px;
+    background-size: contain;
+    text-align: var(--primary-text-align);
+    position: relative;
+}
+
+.genre-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+#stations {
+    opacity: 1;
+    transform: scale(1.2);
+    border-radius: 0%;
+    width: 90px;
+}
+
+.genre-sub-container {
+    width: 80%;
+    height: 100%;
+    text-align: end;
+    display: flex;
+    justify-content: space-around;
+}
+
+.genre-name {
+    position: absolute;
+    top: 38%;
+    left: 27%;
+    color: var(--primary-text-color);
+}
+
+.workout {
+    left: 16%;
+}
+
+/* Responsive design */
+
+@media screen and (max-width: 768px) {
+    /* no changes required  */
+} 
+
+@media screen and (max-width: 425px) {
+   
+    #station-div {
+        display: none;
+    }
+
+    .music-genres {
+        overflow-x: auto;
+    }
+
+    .genre-sub-container {
+        width: 100%;
+        overflow-x: auto;
+        justify-content: space-evenly;
+    }
+
+    .genre-container {
+        min-width: 80px;
+    }
+
+    /* .workout {
+        left: 4%;
+    } */
+} 
